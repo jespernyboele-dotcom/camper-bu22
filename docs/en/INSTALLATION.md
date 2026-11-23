@@ -2,7 +2,7 @@
 
 Read this guide once from start to finish before your first night. Reading takes about 5 minutes, and the setup itself about 10.
 
-*[Dansk version](INSTALLATION_DA.md)*
+*[Dansk version](../da/INSTALLATION.md)*
 
 ---
 
@@ -12,6 +12,7 @@ You need:
 - **An Android phone or tablet** with Android 11 or newer. The app does not work on iPhone.
 - **The VW app (Volkswagen)**, signed in, where you can start the climate yourself.
 - **Internet and power all night.** Keep the phone on a charger.
+- **2 extra minutes for Play Protect.** Google blocks the install until you briefly switch off Play Protect scanning. See section 2.
 
 It's a good idea to:
 - **Open the VW app first** and start and stop the climate once yourself. Then you know the car responds and the VW app has finished its welcome screens.
@@ -20,26 +21,31 @@ It's a good idea to:
 ---
 
 ## 1. Download the app
-On your phone, go to **[Releases](https://github.com/jespernyboele-dotcom/camper-bu22/releases/latest)** and tap the file ending in **`.apk`**.
+On your phone, open **[Camper BU22 on nyboledigital.dk](https://nyboledigital.dk/en/projects/camper-bu22/#download)** and tap **Download Camper BU22**. The file is called `CamperBU22.apk`.
 
-Only download the app from here. Every official release is signed with the same key, and Android refuses to install an update signed with a different key.
+Only download the app from there. Every official release is signed with the same key, and Android refuses to install an update signed with a different key.
 
-## 2. Install
-Android shows some warnings because the app doesn't come from Google Play. They are normal.
+## 2. Install: getting past Play Protect
+If you open the file straight away, Google Play Protect shows **"App blocked to protect your device"** with only an OK button. Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse that access. Camper BU22 needs Accessibility to tap the VW app, so you switch off Play Protect scanning while you install, and back on afterwards:
 
-1. **"Install unknown apps":** tap **Settings → Allow from this source**, then go back.
-2. **Play Protect** ("Unsafe app" or "App not scanned"): tap **More details → Install anyway**. If it asks to send the app for scanning, that's up to you. It doesn't change the app.
-3. Tap **Install**, then **Open**.
+1. Open the **Play Store**, tap your **profile picture** in the top right, and choose **Play Protect**.
+2. Tap the **gear** in the top right and switch off **Scan apps with Play Protect**.
+3. Open the downloaded file `CamperBU22.apk`, e.g. from **Files → Downloads**.
+4. **"Install unknown apps":** tap **Settings → Allow from this source**, then go back.
+5. Tap **Install**, then **Open**.
+6. **Switch "Scan apps with Play Protect" back on** in the same place as steps 1–2. It takes 10 seconds and matters for your phone's security.
 
-**Updating from an earlier version?** Just install over the old one. Don't uninstall first. That way you keep calibration, settings and statistics.
+**Tapped OK on the block?** No problem. Switch off scanning and open the file again.
+
+**Updating from an earlier version?** Just install over the old one. Don't uninstall first. That way you keep calibration, settings and statistics. If Play Protect blocks the update too, do the same as above.
 
 ## 3. Let the app control the VW app
 Camper BU22 taps the VW app for you through Android Accessibility. It has to be switched on once.
 
 1. Open Camper BU22, read the disclaimer, tap **I understand**, then **Open Accessibility**.
 2. Tap **Camper BU22**, switch it **on**, and tap **Allow**.
-3. **Greyed out, or it says "Restricted setting"?** That's Android's protection against apps from outside the Play Store:
-   - Go to **Settings → Apps → Camper BU22**.
+3. **Greyed out, "Restricted setting", or the message "App was denied access"?** That's Android's protection against apps from outside the Play Store. Tap **Close**, then:
+   - Go to **Settings → Apps → Camper BU22** (the **App info** page, not "App permissions").
    - Tap **⋮** in the top right → **Allow restricted settings**, and confirm with your PIN.
    - Go back to **Accessibility → Camper BU22** and switch it on.
 
@@ -92,7 +98,7 @@ The app checks once that it can control your VW app: it starts and stops the cli
 - **The car's battery:** VW switches the climate off itself at about **20 %**. With the **battery guard** you can choose to stop earlier, e.g. at 30 %.
 - **Banking apps:** some banking apps refuse to open while an app has Accessibility switched on. **Bank-friendly mode** is on by default and switches access off after each session. Next time you tap Start, the app asks you to switch it on again with one tap.
 - **Animal mode** is an extra safety net with alarms, not a guarantee. Always check on your animals yourself.
-- **New versions:** the app checks for a new version by itself and shows a card on the home screen. Install it when no session is running.
+- **New versions:** the app checks for a new version by itself. You get one notification and a card on the home screen that opens the download page. Install it when no session is running.
 - **VW updates:** if a new VW app makes Camper BU22 fail, the app tells the developer anonymously (VW version, app version, error code and phone model). You can switch this off under **Settings → Phone**.
 - **Never tap "Force stop"** on Camper BU22. Android then switches the service off, and nothing happens at night.
 

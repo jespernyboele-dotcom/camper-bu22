@@ -12,10 +12,12 @@ VW slukker selv klimaet efter ca. 30 minutter. Camper BU22 genstarter det automa
 
 ## Hent appen
 
-Gå til **[Releases](../../releases/latest)** og hent filen, der ender på **`.apk`**. Åbn den på telefonen for at installere.
+Hent appen på **[nyboledigital.dk/projekter/camper-bu22](https://nyboledigital.dk/projekter/camper-bu22/#download)**.
 
-👉 **Læs [installationsguiden](INSTALLATION_DA.md) før første nat.** Den tager dig fra download til første nat på cirka 10 minutter.
-Spørgsmål? Se [ofte stillede spørgsmål](FAQ_DA.md).
+> ⚠️ **Før du installerer:** Google Play Protect blokerer apps uden for Play Butik, der bruger Accessibility, og viser kun en OK-knap. Du skal kort slå Play Protects scanning fra under installationen. Det tager 2 minutter, og [installationsguiden](docs/da/INSTALLATION.md#2-installér-kom-forbi-play-protect) viser hvordan.
+
+👉 **Læs [installationsguiden](docs/da/INSTALLATION.md) før første nat.** Den tager dig fra download til første nat på cirka 10 minutter.
+Spørgsmål? Se [ofte stillede spørgsmål](docs/da/FAQ.md). Nyt i 1.0: se [ændringerne](CHANGELOG.md).
 
 Kræver Android 11 eller nyere og VW-appen (We Connect / Volkswagen) logget ind på samme telefon.
 
@@ -28,8 +30,8 @@ Camper BU22 ligger **ikke** i Google Play Butik. Derfor viser Android nogle adva
 **1. "Installer ukendte apps"**
 Første gang beder telefonen dig give din browser eller Filer-app lov til at installere apps. Tryk **Indstillinger → Tillad fra denne kilde**, og gå tilbage.
 
-**2. Play Protect: "Appen er ikke scannet" / "Usikker app"**
-Tryk **Flere oplysninger → Installer alligevel**. Spørger den, om appen skal sendes til scanning, må du selv vælge. Det ændrer ikke på appen.
+**2. Play Protect: "Appen er blokeret for at beskytte din enhed"**
+Google blokerer alle apps uden for Play Butik, der bruger Accessibility, fordi svindelapps kan misbruge den adgang. Camper BU22 skal bruge den for at trykke i VW-appen. Slå **Play Butik → profilbillede → Play Protect → ⚙ → Scan apps med Play Protect** fra, installér, og slå den til igen bagefter.
 
 **3. "Begrænset indstilling" ved Accessibility**
 Appen bruger Android Accessibility til at trykke i VW-appen. På nyere Android er den grå første gang. Gå til **Indstillinger → Apps → Camper BU22 → ⋮ (øverst til højre) → Tillad begrænsede indstillinger**, og slå den så til.
@@ -53,7 +55,7 @@ Alle officielle udgaver er signeret med samme nøgle. Certifikatets SHA-256:
 6d:ca:0f:4b:fa:35:1b:08:d5:c3:44:81:fd:92:29:87:ea:00:13:f9:94:b6:18:2c:00:6b:ac:33:aa:41:4d:0b
 ```
 
-Hent kun appen herfra. Android nægter at installere en opdatering, der er signeret med en anden nøgle.
+Hent kun appen fra nyboledigital.dk. Android nægter at installere en opdatering, der er signeret med en anden nøgle.
 
 ---
 
@@ -81,17 +83,19 @@ VW switches the climate off after about 30 minutes. Camper BU22 restarts it auto
 > Unofficial hobby project. Not made by, endorsed by or affiliated with Volkswagen. Use at your own risk.
 
 ## Download
-Go to **[Releases](../../releases/latest)** and download the file ending in **`.apk`**. Open it on your phone to install. Requires Android 11+ and the VW app (We Connect / Volkswagen) signed in on the same phone.
+Download the app at **[nyboledigital.dk/en/projects/camper-bu22](https://nyboledigital.dk/en/projects/camper-bu22/#download)**. Requires Android 11+ and the VW app (We Connect / Volkswagen) signed in on the same phone.
 
-👉 **Read the [installation guide](INSTALLATION_EN.md) before your first night.** It takes you from download to first night in about 10 minutes.
-Questions? See the [FAQ](FAQ_EN.md).
+> ⚠️ **Before you install:** Google Play Protect blocks apps from outside the Play Store that use Accessibility, and shows only an OK button. You need to switch off Play Protect scanning briefly while installing. It takes 2 minutes, and the [installation guide](docs/en/INSTALLATION.md#2-install-getting-past-play-protect) shows how.
+
+👉 **Read the [installation guide](docs/en/INSTALLATION.md) before your first night.** It takes you from download to first night in about 10 minutes.
+Questions? See the [FAQ](docs/en/FAQ.md). What's new in 1.0: see the [changelog](CHANGELOG.md#changelog-english).
 
 ## "Is this safe?" – the warnings explained
 Camper BU22 is **not** on Google Play, so Android shows warnings that are normal for directly installed apps. They don't mean anything is wrong. They only mean Google hasn't reviewed it.
 
 1. **"Install unknown apps"** – tap **Settings → Allow from this source**, then go back.
-2. **Play Protect: "App not scanned" / "Unsafe app"** – tap **More details → Install anyway**.
-3. **"Restricted setting" for Accessibility** – go to **Settings → Apps → Camper BU22 → ⋮ → Allow restricted settings**, then switch it on.
+2. **Play Protect: "App blocked to protect your device"** – Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse it. Camper BU22 needs it to tap the VW app. Switch off **Play Store → profile picture → Play Protect → ⚙ → Scan apps with Play Protect**, install, then switch it back on.
+3. **"Restricted setting" / "App was denied access" for Accessibility** – go to **Settings → Apps → Camper BU22 → ⋮ → Allow restricted settings**, then switch it on.
 
 **Why not Google Play?** Camper BU22 is a free hobby project and is published directly here. Apps on Google Play that use Accessibility to control another app need separate approval from Google, and Camper BU22 hasn't been through that process.
 

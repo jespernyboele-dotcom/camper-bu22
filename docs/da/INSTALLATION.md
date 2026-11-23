@@ -2,7 +2,7 @@
 
 Læs guiden én gang fra start til slut, før den første nat. Det tager cirka 5 minutter, og selve opsætningen tager cirka 10.
 
-*[English version](INSTALLATION_EN.md)*
+*[English version](../en/INSTALLATION.md)*
 
 ---
 
@@ -12,6 +12,7 @@ Du skal bruge:
 - **En Android-telefon eller -tablet** med Android 11 eller nyere. Appen virker ikke på iPhone.
 - **VW-appen (Volkswagen)**, hvor du er logget ind, og hvor du selv kan starte klimaet.
 - **Internet og strøm hele natten.** Telefonen skal ligge i en oplader.
+- **2 ekstra minutter til Play Protect.** Google blokerer installationen, indtil du kort slår Play Protects scanning fra. Se afsnit 2.
 
 Det er en god idé at:
 - **Åbne VW-appen først** og starte og stoppe klimaet én gang selv. Så ved du, at bilen svarer, og at VW-appen er færdig med sine velkomstvinduer.
@@ -20,26 +21,31 @@ Det er en god idé at:
 ---
 
 ## 1. Hent appen
-Gå til **[Releases](https://github.com/jespernyboele-dotcom/camper-bu22/releases/latest)** på telefonen, og tryk på filen, der ender på **`.apk`**.
+Åbn **[Camper BU22 på nyboledigital.dk](https://nyboledigital.dk/projekter/camper-bu22/#download)** på telefonen, og tryk **Hent Camper BU22**. Filen hedder `CamperBU22.apk`.
 
-Hent kun appen herfra. Alle officielle udgaver er signeret med samme nøgle, og Android nægter at installere en opdatering med en anden nøgle.
+Hent kun appen derfra. Alle officielle udgaver er signeret med samme nøgle, og Android nægter at installere en opdatering med en anden nøgle.
 
-## 2. Installér
-Android viser nogle advarsler, fordi appen ikke kommer fra Google Play. De er normale.
+## 2. Installér: kom forbi Play Protect
+Åbner du filen direkte, viser Google Play Protect **"Appen er blokeret for at beskytte din enhed"** med kun en OK-knap. Google blokerer alle apps uden for Play Butik, der bruger Accessibility, fordi svindelapps kan misbruge den adgang. Camper BU22 skal bruge Accessibility for at kunne trykke i VW-appen, så du slår Play Protects scanning fra, mens du installerer, og til igen bagefter:
 
-1. **"Installer ukendte apps":** Tryk **Indstillinger → Tillad fra denne kilde**, og gå tilbage.
-2. **Play Protect** ("Usikker app" eller "Appen er ikke scannet"): Tryk **Flere oplysninger → Installer alligevel**. Spørger den, om appen må sendes til scanning, vælger du selv. Det ændrer ikke på appen.
-3. Tryk **Installer** og derefter **Åbn**.
+1. Åbn **Play Butik**, tryk på dit **profilbillede** øverst til højre, og vælg **Play Protect**.
+2. Tryk på **tandhjulet** øverst til højre, og slå **Scan apps med Play Protect** fra.
+3. Åbn den hentede fil `CamperBU22.apk`, fx fra **Filer → Downloads**.
+4. **"Installer ukendte apps":** Tryk **Indstillinger → Tillad fra denne kilde**, og gå tilbage.
+5. Tryk **Installer** og derefter **Åbn**.
+6. **Slå "Scan apps med Play Protect" til igen** samme sted som i trin 1–2. Det tager 10 sekunder og er vigtigt for din telefons sikkerhed.
 
-**Opdaterer du fra en tidligere version?** Installér bare oven på den gamle. Afinstallér ikke først. Så beholder du kalibrering, indstillinger og statistik.
+**Kom du til at trykke OK på blokeringen?** Det gør ikke noget. Slå scanningen fra, og åbn filen igen.
+
+**Opdaterer du fra en tidligere version?** Installér bare oven på den gamle. Afinstallér ikke først. Så beholder du kalibrering, indstillinger og statistik. Blokerer Play Protect også opdateringen, så gør som ovenfor.
 
 ## 3. Giv appen lov til at styre VW-appen
 Camper BU22 trykker i VW-appen for dig via Androids tilgængelighedsfunktion (Accessibility). Den skal slås til én gang.
 
 1. Åbn Camper BU22, læs ansvarsfraskrivelsen, og tryk **Jeg forstår** og derefter **Åbn Accessibility**.
 2. Tryk på **Camper BU22**, slå den **til**, og tryk **Tillad**.
-3. **Er den grå, eller står der "Begrænset indstilling"?** Det er Androids beskyttelse mod apps uden for Play Butik:
-   - Gå til **Indstillinger → Apps → Camper BU22**.
+3. **Er den grå, står der "Begrænset indstilling", eller får du beskeden "Appen blev nægtet adgang"?** Det er Androids beskyttelse mod apps uden for Play Butik. Tryk **Luk**, og:
+   - Gå til **Indstillinger → Apps → Camper BU22** (siden **Appinfo**, ikke "Apptilladelser").
    - Tryk **⋮** øverst til højre → **Tillad begrænsede indstillinger**, og bekræft med din pinkode.
    - Gå tilbage til **Accessibility → Camper BU22**, og slå den til.
 
@@ -92,7 +98,7 @@ Appen tjekker én gang, at den kan styre din VW-app: den starter og stopper klim
 - **Bilens batteri:** VW slukker selv klimaet ved cirka **20 %**. Med **batterivagten** kan du vælge at stoppe tidligere, fx ved 30 %.
 - **Bankapps og MitID:** Nogle bankapps vil ikke åbne, mens en app har Accessibility slået til. **Bankvenlig tilstand** er slået til fra start og slår adgangen fra efter hver session. Næste gang du trykker Start, beder appen dig slå den til igen med ét tryk.
 - **Dyretilstand** er et ekstra sikkerhedsnet med alarm, ikke en garanti. Tjek altid selv dine dyr.
-- **Nye versioner:** Appen tjekker selv, om der er en ny version, og viser et kort på forsiden. Installér den, når der ikke kører en session.
+- **Nye versioner:** Appen tjekker selv, om der er en ny version. Du får én besked og et kort på forsiden, som åbner download-siden. Installér den, når der ikke kører en session.
 - **VW-opdateringer:** Hvis en ny VW-app får Camper BU22 til at fejle, giver appen selv udvikleren anonym besked (VW-version, appversion, fejlkode og telefonmodel). Det kan slås fra under **Indstillinger → Telefon**.
 - **Tryk aldrig "Tving til at stoppe"** på Camper BU22. Så slår Android tjenesten fra, og der sker ingenting om natten.
 

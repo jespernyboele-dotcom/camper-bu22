@@ -1,6 +1,6 @@
 # Frequently asked questions · Camper BU22
 
-*[Dansk version](FAQ_DA.md)*
+*[Dansk version](../da/FAQ.md)*
 
 ### What does the app actually do?
 It restarts the VW climate for you every 28 minutes at night, so it does not stop on its own after 30 minutes. You sleep, the van stays warm.
@@ -12,7 +12,10 @@ No. There is no API, no agreement with VW and no login. The app taps the VW app 
 No. An unofficial hobby project, not affiliated with VW.
 
 ### Why isn't it on Google Play?
-Camper BU22 is a free hobby project and is published directly on GitHub. Apps on Google Play that use Accessibility to control another app need separate approval from Google, and Camper BU22 hasn't been through that process. The warnings when installing only mean Google hasn't reviewed the app.
+Camper BU22 is a free hobby project and is published directly on nyboledigital.dk. Apps on Google Play that use Accessibility to control another app need separate approval from Google, and Camper BU22 hasn't been through that process.
+
+### Why does Play Protect block the app?
+Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse that access. The block says nothing about Camper BU22 itself. The app needs Accessibility to tap the VW app. Switch off Play Protect scanning while you install, and back on afterwards. See the [installation guide, section 2](INSTALLATION.md#2-install-getting-past-play-protect).
 
 ### Does it send my data anywhere?
 No data about you. The app fetches the weather forecast (from your approximate location) for the battery forecast and checks GitHub for new versions.
@@ -56,7 +59,7 @@ Usually nothing. If VW changes something that stops Camper BU22, the developer i
 Tip: switch off auto-update for the VW app in the Play Store, and only update once Camper BU22 is ready.
 
 ### How do I get new versions?
-The app checks every time you open it and shows a card on the home screen when there's a new version. Install it over the old one when no session is running. Calibration and settings are kept.
+The app checks by itself and notifies you once when there's a new version. The notification and the card on the home screen open the download page on nyboledigital.dk. Install it over the old one when no session is running. Calibration and settings are kept. If Play Protect blocks it, do the same as for the first install.
 
 ### It is free — how do I support it?
 Through MobilePay or Ko-fi at the bottom of the Statistics tab. No subscription, no obligation.
@@ -68,6 +71,6 @@ If that doesn't help, send a log (Statistics → Send log to the developer) or w
 
 ---
 
-Can't find the answer? See the [installation guide](INSTALLATION_EN.md), use **Settings → Help → Troubleshooting** in the app, or write to camperbu22@nyboledigital.dk.
+Can't find the answer? See the [installation guide](INSTALLATION.md), use **Settings → Help → Troubleshooting** in the app, or write to camperbu22@nyboledigital.dk.
 
 Made by [NyboleDigital](https://nyboledigital.dk/?utm_source=github&utm_medium=faq).
