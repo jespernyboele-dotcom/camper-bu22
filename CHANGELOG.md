@@ -24,6 +24,7 @@ Første officielle udgave. Erstatter 0.4.7-beta, som holder op med at virke 28. 
 **VW-appen og forbindelsen**
 - Appen opdager, hvis VW-appen er logget ud, eller hvis der ikke er internet, og fortæller dig det.
 - Skærmen dæmpes, mens VW-appen er fremme. Så er der intet lysglimt ved genstart.
+- Stopper en ny VW-app Camper BU22, får udvikleren automatisk en anonym besked (VW-version, appversion, fejlkode og telefonmodel). Det kan slås fra under Indstillinger → Meld VW-opdateringer automatisk.
 
 **Kalibrering**
 - Er nu kortere: én start og ét stop, og derefter temperaturskalaen.
@@ -76,6 +77,7 @@ First official release. Replaces 0.4.7-beta, which stops working on 28 November 
 **VW app and connection**
 - The app detects when the VW app is signed out or there is no internet, and tells you.
 - The screen is dimmed while the VW app is showing, so there is no flash of light at restarts.
+- If a new VW app stops Camper BU22, the developer is told automatically and anonymously (VW version, app version, error code and phone model). You can switch this off under Settings → Report VW updates automatically.
 
 **Calibration**
 - Now shorter: one start and one stop, then the temperature scale.
