@@ -6,7 +6,7 @@
 Den genstarter VW's klima for dig hver 28. minut om natten, så det ikke stopper af sig selv efter 30 minutter. Du sover, bilen holder varmen.
 
 ### Hvordan virker den? Har den adgang til VW's systemer?
-Nej. Der er ingen API, ingen aftale med VW og intet login. Appen trykker i VW-appen på telefonen for dig via Androids tilgængelighedsfunktion (Accessibility), præcis som en finger. Derfor kan den kun det, du selv kan i VW-appen.
+Nej. Der er ingen API, ingen aftale med VW og intet login. Appen trykker i VW-appen på telefonen for dig via Androids Hjælpefunktioner (Samsung: Tilgængelighed), præcis som en finger. Derfor kan den kun det, du selv kan i VW-appen.
 
 ### Er den fra Volkswagen?
 Nej. Et uofficielt hobbyprojekt, ikke tilknyttet VW.
@@ -18,9 +18,9 @@ Camper BU22 er et gratis hobbyprojekt og udgives direkte på nyboledigital.dk. A
 Google blokerer alle apps uden for Play Butik, der bruger Accessibility, fordi svindelapps kan misbruge den adgang. Blokeringen siger ikke noget om Camper BU22 i sig selv. Appen skal bruge Accessibility for at trykke i VW-appen. Slå Play Protects scanning fra, mens du installerer, og til igen bagefter. Se [installationsguiden, afsnit 2](INSTALLATION.md#2-installér-kom-forbi-play-protect).
 
 ### Sender den mine data nogen steder hen?
-Ikke data om dig. Appen henter vejrudsigten (ud fra omtrentlig placering) til batteriprognosen og tjekker GitHub for nye versioner.
+Ikke data om dig. Appen henter vejrudsigten (ud fra omtrentlig placering) til batteriprognosen og tjekker GitHub for nye versioner og beskeder fra udvikleren.
 
-Får en ny VW-app Camper BU22 til at fejle, sender appen én anonym besked til udvikleren: VW-version, appversion, fejlkode og telefonmodel. Intet navn, ingen placering, intet ID. Det kan slås fra under Indstillinger → Telefon.
+Får en ny VW-app Camper BU22 til at fejle, sender appen én anonym besked til udvikleren: VW-version, appversion, fejlkode, telefonmodel og appens hændelseslog (al tekst fra VW-skærmen fjernet). Intet navn, ingen placering, intet ID. Det kan slås fra under Indstillinger → Telefon.
 
 Logs forlader kun telefonen, hvis du selv sender dem.
 
@@ -48,7 +48,7 @@ Ja. Slå dyretilstand til. Så holder skærmen normal lysstyrke i dagslys, og ap
 ⚠️ Men appen er en hjælp, ikke en garanti. Lad aldrig et dyr være afhængig af den alene. Hold øje, hav en plan B, og efterlad aldrig et dyr et sted hvor det kan blive for varmt eller for koldt.
 
 ### Hvilke biler og telefoner virker den på?
-Buzz årgang 2026 og ældre, som mangler den indbyggede camper-mode (den kom i MY27). Testet på udvalgte Android-telefoner.
+Buzz årgang 2026 og ældre, som mangler den indbyggede camper-mode (den kom i MY27). Testet på udvalgte Android-telefoner. VW-appen skal være version 4.8.1 eller nyere.
 
 ### Virker den i udlandet eller på andre sprog?
 Ja — det er den samme VW-app. Appen findes på flere sprog.

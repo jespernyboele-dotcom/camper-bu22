@@ -10,7 +10,7 @@ Read this guide once from start to finish before your first night. Reading takes
 
 You need:
 - **An Android phone or tablet** with Android 11 or newer. The app does not work on iPhone.
-- **The VW app (Volkswagen)**, signed in, where you can start the climate yourself.
+- **The VW app (Volkswagen) version 4.8.1 or newer**, signed in, where you can start the climate yourself.
 - **Internet and power all night.** Keep the phone on a charger.
 - **2 extra minutes for Play Protect.** Google blocks the install until you briefly switch off Play Protect scanning. See section 2.
 
@@ -28,40 +28,49 @@ Only download the app from there. Every official release is signed with the same
 ## 2. Install: getting past Play Protect
 If you open the file straight away, Google Play Protect shows **"App blocked to protect your device"** with only an OK button. Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse that access. Camper BU22 needs Accessibility to tap the VW app, so you switch off Play Protect scanning while you install, and back on afterwards:
 
-1. Open the **Play Store**, tap your **profile picture** in the top right, and choose **Play Protect**.
-2. Tap the **gear** in the top right and switch off **Scan apps with Play Protect**.
-3. Open the downloaded file `CamperBU22.apk`, e.g. from **Files → Downloads**.
-4. **"Install unknown apps":** tap **Settings → Allow from this source**, then go back.
-5. Tap **Install**, then **Open**.
-6. **Switch "Scan apps with Play Protect" back on** in the same place as steps 1–2. It takes 10 seconds and matters for your phone's security.
+1. Tap **OK** on the Play Protect message.
+2. Open the **Play Store**, tap your **profile picture** in the top right, and choose **Play Protect**.
+3. Tap the **gear** in the top right and switch off **Scan apps with Play Protect**.
+4. Open the downloaded file `CamperBU22.apk`, e.g. from **Files → Downloads**.
+5. **"Install unknown apps":** tap **Settings → Allow from this source**, then go back.
+6. Tap **Install**, then **Open**.
+7. **Switch "Scan apps with Play Protect" back on** in the same place as steps 1–2. It takes 10 seconds and matters for your phone's security.
 
 **Tapped OK on the block?** No problem. Switch off scanning and open the file again.
 
 **Updating from an earlier version?** Just install over the old one. Don't uninstall first. That way you keep calibration, settings and statistics. If Play Protect blocks the update too, do the same as above.
 
-## 3. Let the app control the VW app
-Camper BU22 taps the VW app for you through Android Accessibility. It has to be switched on once.
+## 3. The setup guide and Accessibility
+The first time you open Camper BU22, the app shows a **setup guide**. It checks the phone one step at a time and briefly explains why each step is needed. Tap **Fix it** on every step that isn't OK.
 
-1. Open Camper BU22, read the disclaimer, tap **I understand**, then **Open Accessibility**.
-2. Tap **Camper BU22**, switch it **on**, and tap **Allow**.
-3. **Greyed out, "Restricted setting", or the message "App was denied access"?** That's Android's protection against apps from outside the Play Store. Tap **Close**, then:
-   - Go to **Settings → Apps → Camper BU22** (the **App info** page, not "App permissions").
-   - Tap **⋮** in the top right → **Allow restricted settings**, and confirm with your PIN.
-   - Go back to **Accessibility → Camper BU22** and switch it on.
+The most important step is **Accessibility**. Camper BU22 taps in the VW app for you – only climate, temperature, Start and Stop. You switch it on once:
 
-## 4. Give the last permissions
-If there are yellow boxes at the top of the home screen, tap them one at a time:
-- **Keep screen on:** switch on **Allow modifying system settings**. The app only raises the screen timeout during a session and puts your own setting back afterwards.
-- **Background running:** allow the app not to be battery-optimised. Otherwise Android may close it at night.
-- **Notifications:** only needed if you want alarms.
-- **Approximate location:** only used to fetch the weather forecast for the battery forecast. The app works without it.
+1. Tap **Fix it**.
+2. Tap **Camper BU22** under **Downloaded apps** (Samsung: **Installed apps**).
+3. Switch it on and tap **Allow**.
 
-**Check that everything is fine:** **Settings → Help → Troubleshooting → Check my setup**. Everything should be green.
+### Is Camper BU22 grey, or does it say "Restricted setting"?
+That's normal the first time. It's Android's protection against apps from outside the Play Store.
+
+1. Tap the grey **Camper BU22**. A message about **Restricted setting** appears. Tap **OK**.
+2. Go to the phone's **Settings → Apps → Camper BU22** (or tap **Open app info** in the guide).
+3. Tap **⋮** at the top right → **Allow restricted settings**. Confirm with your PIN or fingerprint.
+4. Go back to **Accessibility → Camper BU22**. It is no longer grey. Switch it on.
+5. Can't see **⋮** in step 3? Then you haven't tried to switch it on yet. Start again from step 1.
+
+## 4. The other steps in the guide
+- **Battery: Unrestricted:** tap **Fix it → Allow**. Then Android won't close the app at night.
+- **Modify system settings:** tap **Fix it** → switch on **Allow modifying system settings** → go back. The app only raises the screen timeout during a session and puts your own setting back afterwards.
+- **Notifications:** tap **Fix it → Allow**. Used for warnings such as a locked phone or lost access.
+- **Alarm:** choose yourself whether you want to be woken. The default is no alarm.
+- **Approximate location:** only used for the weather forecast for the battery forecast. The app works without it.
+
+The guide runs a quick check every time you tap Start. You can also check yourself: **Settings → Help → Troubleshooting → Check my setup**. Everything should be green.
 
 ## 5. Settings for your phone brand
 Many phones close background apps to save power. Then the restart doesn't happen, and the climate stops after about 30 minutes. Do this once:
 
-- **All phones:** Settings → Apps → Camper BU22 → Battery → **Unrestricted**.
+- **All phones:** Settings → Apps → Camper BU22 → **App battery usage** (Samsung: **Battery**) → **Unrestricted**.
 - **Samsung:** Settings → Battery → Background usage limits → add Camper BU22 to **Never sleeping apps**. Also switch off **Auto restart** under Device care, so the phone doesn't restart at night.
 - **Xiaomi, Redmi and POCO:** Settings → Apps → Camper BU22 → switch on **Autostart**, and set battery saver to **No restrictions**.
 - **OnePlus, OPPO and Realme:** Settings → Apps → Camper BU22 → Battery usage → switch on **Allow background activity** and **Allow auto launch**.
@@ -99,7 +108,7 @@ The app checks once that it can control your VW app: it starts and stops the cli
 - **Banking apps:** some banking apps refuse to open while an app has Accessibility switched on. **Bank-friendly mode** is on by default and switches access off after each session. Next time you tap Start, the app asks you to switch it on again with one tap.
 - **Animal mode** is an extra safety net with alarms, not a guarantee. Always check on your animals yourself.
 - **New versions:** the app checks for a new version by itself. You get one notification and a card on the home screen that opens the download page. Install it when no session is running.
-- **VW updates:** if a new VW app makes Camper BU22 fail, the app tells the developer anonymously (VW version, app version, error code and phone model). You can switch this off under **Settings → Phone**.
+- **VW updates:** if a new VW app makes Camper BU22 fail, the app tells the developer anonymously (VW version, app version, error code, phone model and the app's event log without any screen text). You can switch this off under **Settings → Phone**.
 - **Never tap "Force stop"** on Camper BU22. Android then switches the service off, and nothing happens at night.
 
 ## 9. If something goes wrong

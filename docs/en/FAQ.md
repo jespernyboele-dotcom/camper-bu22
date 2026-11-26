@@ -18,9 +18,9 @@ Camper BU22 is a free hobby project and is published directly on nyboledigital.d
 Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse that access. The block says nothing about Camper BU22 itself. The app needs Accessibility to tap the VW app. Switch off Play Protect scanning while you install, and back on afterwards. See the [installation guide, section 2](INSTALLATION.md#2-install-getting-past-play-protect).
 
 ### Does it send my data anywhere?
-No data about you. The app fetches the weather forecast (from your approximate location) for the battery forecast and checks GitHub for new versions.
+No data about you. The app fetches the weather forecast (from your approximate location) for the battery forecast and checks GitHub for new versions and messages from the developer.
 
-If a new VW app makes Camper BU22 fail, the app sends one anonymous message to the developer: VW version, app version, error code and phone model. No name, no location, no ID. You can switch it off under Settings → Phone.
+If a new VW app makes Camper BU22 fail, the app sends one anonymous message to the developer: VW version, app version, error code, phone model and the app's event log (all text from the VW screen removed). No name, no location, no ID. You can switch it off under Settings → Phone.
 
 Logs only leave the phone if you send them yourself.
 
@@ -48,7 +48,7 @@ Yes. Turn on animal mode. The screen keeps normal brightness in daylight, and th
 ⚠️ But the app is a help, not a guarantee. Never let an animal depend on it alone. Keep watch, have a plan B, and never leave an animal where it can get too hot or too cold.
 
 ### Which cars and phones does it work on?
-Buzz model year 2026 and older, which lack the built-in camper mode (that arrived in MY27). Tested on selected Android phones.
+Buzz model year 2026 and older, which lack the built-in camper mode (that arrived in MY27). Tested on selected Android phones. The VW app must be version 4.8.1 or newer.
 
 ### Does it work abroad or in other languages?
 Yes — it is the same VW app. The app is available in several languages.

@@ -19,7 +19,7 @@ Hent appen på **[nyboledigital.dk/projekter/camper-bu22](https://nyboledigital.
 👉 **Læs [installationsguiden](docs/da/INSTALLATION.md) før første nat.** Den tager dig fra download til første nat på cirka 10 minutter.
 Spørgsmål? Se [ofte stillede spørgsmål](docs/da/FAQ.md). Nyt i 1.0: se [ændringerne](CHANGELOG.md).
 
-Kræver Android 11 eller nyere og VW-appen (We Connect / Volkswagen) logget ind på samme telefon.
+Kræver Android 11 eller nyere og VW-appen (We Connect / Volkswagen) version 4.8.1 eller nyere, logget ind på samme telefon.
 
 ---
 
@@ -34,7 +34,7 @@ Første gang beder telefonen dig give din browser eller Filer-app lov til at ins
 Google blokerer alle apps uden for Play Butik, der bruger Accessibility, fordi svindelapps kan misbruge den adgang. Camper BU22 skal bruge den for at trykke i VW-appen. Slå **Play Butik → profilbillede → Play Protect → ⚙ → Scan apps med Play Protect** fra, installér, og slå den til igen bagefter.
 
 **3. "Begrænset indstilling" ved Accessibility**
-Appen bruger Android Accessibility til at trykke i VW-appen. På nyere Android er den grå første gang. Gå til **Indstillinger → Apps → Camper BU22 → ⋮ (øverst til højre) → Tillad begrænsede indstillinger**, og slå den så til.
+Appen bruger Android Accessibility til at trykke i VW-appen. På nyere Android er den grå første gang. Prøv at slå den til én gang (tryk OK til "Begrænset indstilling"), og gå så til **Indstillinger → Apps → Camper BU22 → ⋮ (øverst til højre) → Tillad begrænsede indstillinger**, og slå den så til.
 
 ### Hvorfor ikke Google Play?
 Camper BU22 er et gratis hobbyprojekt og udgives direkte her. Apps i Google Play, der bruger Accessibility til at styre en anden app, skal godkendes særskilt af Google, og den proces har Camper BU22 ikke været igennem.
@@ -44,7 +44,7 @@ Camper BU22 er et gratis hobbyprojekt og udgives direkte her. Apps i Google Play
 - ✅ Den rører **ikke** opladning, vinduesvarme, døre eller andet i bilen.
 - ✅ **Ingen login, ingen konto, ingen server.** Den kender ikke din VW-adgangskode.
 - ✅ Den sender **ingen data** om dig nogen steder hen. Den henter kun vejrudsigt (Open-Meteo, ud fra omtrentlig placering til batteriprognosen) og tjekker her på GitHub, om der er en ny version.
-- ✅ **Én undtagelse, anonym:** Hvis en opdatering af VW-appen får Camper BU22 til at fejle, sender appen én gang et lille signal til udvikleren med VW-version, appversion, fejlkode og telefonmodel. Intet navn, ingen placering, intet ID. Så ved udvikleren det med det samme og kan rette det. Kan slås fra under **Indstillinger → Meld VW-opdateringer automatisk**.
+- ✅ **Én undtagelse, anonym:** Hvis en opdatering af VW-appen får Camper BU22 til at fejle, sender appen én gang et lille signal til udvikleren med VW-version, appversion, fejlkode, telefonmodel og appens hændelseslog, hvor al tekst fra VW-skærmen er fjernet. Intet navn, ingen placering, intet ID. Så ved udvikleren det med det samme og kan rette det. Kan slås fra under **Indstillinger → Meld VW-opdateringer automatisk**.
 - ✅ Logs forlader kun telefonen, hvis **du selv** trykker "Send log til udvikleren".
 - ✅ **Bankvenlig tilstand:** Accessibility slås fra efter hver session, så bankapps og MitID virker mellem turene.
 
@@ -83,7 +83,7 @@ VW switches the climate off after about 30 minutes. Camper BU22 restarts it auto
 > Unofficial hobby project. Not made by, endorsed by or affiliated with Volkswagen. Use at your own risk.
 
 ## Download
-Download the app at **[nyboledigital.dk/en/projects/camper-bu22](https://nyboledigital.dk/en/projects/camper-bu22/#download)**. Requires Android 11+ and the VW app (We Connect / Volkswagen) signed in on the same phone.
+Download the app at **[nyboledigital.dk/en/projects/camper-bu22](https://nyboledigital.dk/en/projects/camper-bu22/#download)**. Requires Android 11+ and the VW app (We Connect / Volkswagen) 4.8.1 or newer, signed in on the same phone.
 
 > ⚠️ **Before you install:** Google Play Protect blocks apps from outside the Play Store that use Accessibility, and shows only an OK button. You need to switch off Play Protect scanning briefly while installing. It takes 2 minutes, and the [installation guide](docs/en/INSTALLATION.md#2-install-getting-past-play-protect) shows how.
 
@@ -95,11 +95,11 @@ Camper BU22 is **not** on Google Play, so Android shows warnings that are normal
 
 1. **"Install unknown apps"** – tap **Settings → Allow from this source**, then go back.
 2. **Play Protect: "App blocked to protect your device"** – Google blocks every app from outside the Play Store that uses Accessibility, because fraud apps can misuse it. Camper BU22 needs it to tap the VW app. Switch off **Play Store → profile picture → Play Protect → ⚙ → Scan apps with Play Protect**, install, then switch it back on.
-3. **"Restricted setting" / "App was denied access" for Accessibility** – go to **Settings → Apps → Camper BU22 → ⋮ → Allow restricted settings**, then switch it on.
+3. **"Restricted setting" / "App was denied access" for Accessibility** – try to switch it on once (press OK), then go to **Settings → Apps → Camper BU22 → ⋮ → Allow restricted settings** – the option only appears after that first try – then switch it on.
 
 **Why not Google Play?** Camper BU22 is a free hobby project and is published directly here. Apps on Google Play that use Accessibility to control another app need separate approval from Google, and Camper BU22 hasn't been through that process.
 
-**What it does and doesn't do:** it only taps the **VW app** (open climate, set temperature, Start/Stop). It never touches charging, window heating, doors or anything else. No login, no account, no server, and it never sees your VW password. It sends **no data about you** anywhere; it only fetches a weather forecast (Open-Meteo, approximate location, for the battery forecast) and checks GitHub for a new version. One anonymous exception: if a VW app update makes Camper BU22 fail, the app sends one small signal to the developer (VW version, app version, error code, phone model; no name, location or ID) so it can be fixed fast. You can switch it off under **Settings → Report VW updates automatically**. Logs only leave the phone if **you** tap "Send log". Bank-friendly mode switches Accessibility off after each session so banking apps work between trips.
+**What it does and doesn't do:** it only taps the **VW app** (open climate, set temperature, Start/Stop). It never touches charging, window heating, doors or anything else. No login, no account, no server, and it never sees your VW password. It sends **no data about you** anywhere; it only fetches a weather forecast (Open-Meteo, approximate location, for the battery forecast) and checks GitHub for a new version and messages from the developer. One anonymous exception: if a VW app update makes Camper BU22 fail, the app sends one small signal to the developer (VW version, app version, error code, phone model and the app's event log with all VW screen text removed; no name, location or ID) so it can be fixed fast. You can switch it off under **Settings → Report VW updates automatically**. Logs only leave the phone if **you** tap "Send log". Bank-friendly mode switches Accessibility off after each session so banking apps work between trips.
 
 **Verify the file:** every official release is signed with the same key. Certificate SHA-256:
 `6d:ca:0f:4b:fa:35:1b:08:d5:c3:44:81:fd:92:29:87:ea:00:13:f9:94:b6:18:2c:00:6b:ac:33:aa:41:4d:0b`

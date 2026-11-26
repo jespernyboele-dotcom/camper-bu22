@@ -10,7 +10,7 @@ Læs guiden én gang fra start til slut, før den første nat. Det tager cirka 5
 
 Du skal bruge:
 - **En Android-telefon eller -tablet** med Android 11 eller nyere. Appen virker ikke på iPhone.
-- **VW-appen (Volkswagen)**, hvor du er logget ind, og hvor du selv kan starte klimaet.
+- **VW-appen (Volkswagen) version 4.8.1 eller nyere**, hvor du er logget ind, og hvor du selv kan starte klimaet.
 - **Internet og strøm hele natten.** Telefonen skal ligge i en oplader.
 - **2 ekstra minutter til Play Protect.** Google blokerer installationen, indtil du kort slår Play Protects scanning fra. Se afsnit 2.
 
@@ -28,40 +28,49 @@ Hent kun appen derfra. Alle officielle udgaver er signeret med samme nøgle, og 
 ## 2. Installér: kom forbi Play Protect
 Åbner du filen direkte, viser Google Play Protect **"Appen er blokeret for at beskytte din enhed"** med kun en OK-knap. Google blokerer alle apps uden for Play Butik, der bruger Accessibility, fordi svindelapps kan misbruge den adgang. Camper BU22 skal bruge Accessibility for at kunne trykke i VW-appen, så du slår Play Protects scanning fra, mens du installerer, og til igen bagefter:
 
-1. Åbn **Play Butik**, tryk på dit **profilbillede** øverst til højre, og vælg **Play Protect**.
-2. Tryk på **tandhjulet** øverst til højre, og slå **Scan apps med Play Protect** fra.
-3. Åbn den hentede fil `CamperBU22.apk`, fx fra **Filer → Downloads**.
-4. **"Installer ukendte apps":** Tryk **Indstillinger → Tillad fra denne kilde**, og gå tilbage.
-5. Tryk **Installer** og derefter **Åbn**.
-6. **Slå "Scan apps med Play Protect" til igen** samme sted som i trin 1–2. Det tager 10 sekunder og er vigtigt for din telefons sikkerhed.
+1. Tryk **OK** på beskeden fra Play Protect.
+2. Åbn **Play Butik**, tryk på dit **profilbillede** øverst til højre, og vælg **Play Protect**.
+3. Tryk på **tandhjulet** øverst til højre, og slå **Scan apps med Play Protect** fra.
+4. Åbn den hentede fil `CamperBU22.apk`, fx fra **Filer → Downloads**.
+5. **"Installer ukendte apps":** Tryk **Indstillinger → Tillad fra denne kilde**, og gå tilbage.
+6. Tryk **Installer** og derefter **Åbn**.
+7. **Slå "Scan apps med Play Protect" til igen** samme sted som i trin 2–3. Det tager 10 sekunder og er vigtigt for din telefons sikkerhed.
 
 **Kom du til at trykke OK på blokeringen?** Det gør ikke noget. Slå scanningen fra, og åbn filen igen.
 
 **Opdaterer du fra en tidligere version?** Installér bare oven på den gamle. Afinstallér ikke først. Så beholder du kalibrering, indstillinger og statistik. Blokerer Play Protect også opdateringen, så gør som ovenfor.
 
-## 3. Giv appen lov til at styre VW-appen
-Camper BU22 trykker i VW-appen for dig via Androids tilgængelighedsfunktion (Accessibility). Den skal slås til én gang.
+## 3. Opsætningsguiden og Hjælpefunktioner
+Første gang du åbner Camper BU22, viser appen en **opsætningsguide**. Den tjekker telefonen ét trin ad gangen og forklarer kort, hvorfor hvert trin er nødvendigt. Tryk **Ret det** på hvert trin, der ikke er i orden.
 
-1. Åbn Camper BU22, læs ansvarsfraskrivelsen, og tryk **Jeg forstår** og derefter **Åbn Accessibility**.
-2. Tryk på **Camper BU22**, slå den **til**, og tryk **Tillad**.
-3. **Er den grå, står der "Begrænset indstilling", eller får du beskeden "Appen blev nægtet adgang"?** Det er Androids beskyttelse mod apps uden for Play Butik. Tryk **Luk**, og:
-   - Gå til **Indstillinger → Apps → Camper BU22** (siden **Appinfo**, ikke "Apptilladelser").
-   - Tryk **⋮** øverst til højre → **Tillad begrænsede indstillinger**, og bekræft med din pinkode.
-   - Gå tilbage til **Accessibility → Camper BU22**, og slå den til.
+Det vigtigste trin er **Hjælpefunktioner** (Samsung: **Tilgængelighed**). Camper BU22 trykker i VW-appen for dig – kun klima, temperatur, Start og Stop. Det skal slås til én gang:
 
-## 4. Giv de sidste tilladelser
-Står der gule bokse øverst på forsiden, så tryk på dem én ad gangen:
-- **Hold skærmen tændt:** Slå **Tillad ændring af systemindstillinger** til. Appen hæver kun skærmens slukketid under en session og sætter din egen indstilling tilbage bagefter.
-- **Kørsel i baggrunden:** Tillad, at appen ikke bliver batterioptimeret. Ellers kan Android lukke den om natten.
-- **Notifikationer:** Kun nødvendigt, hvis du vil have alarmer.
-- **Omtrentlig placering:** Bruges kun til at hente vejrudsigten til batteriprognosen. Appen virker også uden.
+1. Tryk **Ret det**.
+2. Tryk på **Camper BU22** under **Apps, du har downloadet** (Samsung: **Installerede apps**).
+3. Slå kontakten til, og tryk **Tillad**.
 
-**Tjek, at alt er i orden:** **Indstillinger → Hjælp → Fejlsøgning → Tjek min opsætning**. Alt skal være grønt.
+### Er Camper BU22 grå, eller står der "Begrænset indstilling"?
+Det er normalt første gang. Android beskytter sådan mod apps uden for Play Butik.
+
+1. Tryk på den grå **Camper BU22**. Der kommer en besked om **Begrænset indstilling**. Tryk **OK**.
+2. Gå til telefonens **Indstillinger → Apps → Camper BU22** (eller tryk **Åbn appoplysninger** i guiden).
+3. Tryk **⋮** øverst til højre → **Tillad begrænsede indstillinger**. Bekræft med din kode eller dit fingeraftryk.
+4. Gå tilbage til **Hjælpefunktioner → Camper BU22**. Nu er den ikke længere grå. Slå den til.
+5. Kan du ikke se **⋮** i trin 3? Så har du ikke prøvet at slå den til endnu. Start forfra med trin 1.
+
+## 4. De andre trin i guiden
+- **Batteri: Ubegrænset:** Tryk **Ret det → Tillad**. Så lukker Android ikke appen om natten.
+- **Ændre systemindstillinger:** Tryk **Ret det** → slå **Tillad ændring af systemindstillinger** til → gå tilbage. Appen hæver kun skærmens slukketid under en session og sætter din egen indstilling tilbage bagefter.
+- **Notifikationer:** Tryk **Ret det → Tillad**. Bruges til advarsler, fx låst telefon eller mistet adgang.
+- **Alarm:** Vælg selv, om du vil vækkes. Standard er ingen alarm.
+- **Omtrentlig placering:** Bruges kun til vejrudsigten til batteriprognosen. Appen virker også uden.
+
+Guiden kører et hurtigt tjek, hver gang du trykker Start. Du kan også selv tjekke: **Indstillinger → Hjælp → Fejlsøgning → Tjek min opsætning**. Alt skal være grønt.
 
 ## 5. Indstillinger for dit telefonmærke
 Mange telefoner lukker apps i baggrunden for at spare strøm. Så kommer genstarten ikke, og klimaet stopper efter cirka 30 minutter. Gør dette én gang:
 
-- **Alle telefoner:** Indstillinger → Apps → Camper BU22 → Batteri → **Ubegrænset**.
+- **Alle telefoner:** Indstillinger → Apps → Camper BU22 → **Batteriforbrug for apps** (Samsung: **Batteri**) → **Ubegrænset**.
 - **Samsung:** Indstillinger → Batteri → Grænser for baggrundsbrug → tilføj Camper BU22 til **Apps, der aldrig sover**. Slå også **Automatisk genstart** fra under Enhedspleje, så telefonen ikke genstarter om natten.
 - **Xiaomi, Redmi og POCO:** Indstillinger → Apps → Camper BU22 → slå **Autostart** til, og sæt batterisparer til **Ingen begrænsninger**.
 - **OnePlus, OPPO og Realme:** Indstillinger → Apps → Camper BU22 → Batteriforbrug → slå **Tillad baggrundsaktivitet** og **Tillad automatisk start** til.
@@ -96,10 +105,10 @@ Appen tjekker én gang, at den kan styre din VW-app: den starter og stopper klim
 ## 8. Godt at vide
 - **Telefonen bruger ekstra strøm.** Den er vågen hele natten, så hold den i opladeren. Under **Indstillinger → Natskærm** kan du slå **Dæmp automatisk om natten** til.
 - **Bilens batteri:** VW slukker selv klimaet ved cirka **20 %**. Med **batterivagten** kan du vælge at stoppe tidligere, fx ved 30 %.
-- **Bankapps og MitID:** Nogle bankapps vil ikke åbne, mens en app har Accessibility slået til. **Bankvenlig tilstand** er slået til fra start og slår adgangen fra efter hver session. Næste gang du trykker Start, beder appen dig slå den til igen med ét tryk.
+- **Bankapps og MitID:** Nogle bankapps vil ikke åbne, mens en app har Hjælpefunktioner slået til. **Bankvenlig tilstand** er slået til fra start og slår adgangen fra efter hver session. Næste gang du trykker Start, beder appen dig slå den til igen med ét tryk.
 - **Dyretilstand** er et ekstra sikkerhedsnet med alarm, ikke en garanti. Tjek altid selv dine dyr.
 - **Nye versioner:** Appen tjekker selv, om der er en ny version. Du får én besked og et kort på forsiden, som åbner download-siden. Installér den, når der ikke kører en session.
-- **VW-opdateringer:** Hvis en ny VW-app får Camper BU22 til at fejle, giver appen selv udvikleren anonym besked (VW-version, appversion, fejlkode og telefonmodel). Det kan slås fra under **Indstillinger → Telefon**.
+- **VW-opdateringer:** Hvis en ny VW-app får Camper BU22 til at fejle, giver appen selv udvikleren anonym besked (VW-version, appversion, fejlkode, telefonmodel og appens hændelseslog uden tekst fra skærmen). Det kan slås fra under **Indstillinger → Telefon**.
 - **Tryk aldrig "Tving til at stoppe"** på Camper BU22. Så slår Android tjenesten fra, og der sker ingenting om natten.
 
 ## 9. Hvis noget driller
